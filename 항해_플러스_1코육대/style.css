@@ -1,0 +1,88 @@
+/* 스타일링을 위한 CSS 코드 */
+
+h1 {
+    text-align: center;
+}
+
+.hangman-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 이미지와 알파벳 버튼을 1:1 비율로 배치 */
+    grid-gap: 20px; /* 그리드 간격 설정 */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.hangman {
+    text-align: center;
+}
+
+.word-container {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.letters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.letter {
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: calc(100% / 13); /* 13개의 알파벳을 동등한 너비로 배치 */
+}
+
+.word-container {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.message.success {
+    color: green; /* 승리 메시지의 텍스트 색상을 녹색으로 설정 */
+    font-weight: bold; /* 승리 메시지의 폰트 굵기를 두꺼운체로 설정 */
+}
+
+.message.failure {
+    color: red; /* 패배 메시지의 텍스트 색상을 빨간색으로 설정 */
+    font-weight: bold; /* 패배 메시지의 폰트 굵기를 두꺼운체로 설정 */
+}
+img{
+    width: 800px;
+    height: 500px;
+}
+.replay-button {
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 8px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.replay-button:hover {
+    background-color: #2980b9;
+}
+
+.correct {
+    background-color: #2ecc71; /* 짙은 초록색으로 변경 */
+}
